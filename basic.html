@@ -1,0 +1,74 @@
+<!DOCTYPE html> <!--최신버전으로 렌더링함.-->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>css의 기초</title>
+    <style>
+        /*css를 외부파일로 분류해놓는게 나음.*/
+        /*상속*/
+        .wrapper{
+            border:2px solid black;
+            background: yellow;
+            font-size: 2em; /*equal m, 상속받은 글자크기의 두배*/
+        }
+        /*겹침*/
+        #box{
+            color:blue;
+        }
+        body div.wrapper div.box1{
+            color:purple;
+        }
+        /*and속성*/
+        div.note{
+            color:red;
+        }
+        .box1{
+            color:red;
+        }
+        [class^="box"]{
+            /*box라는 클래스로 시작하는 애들 모두 선택*/
+            background:pink ;
+            color:green !important;/*인라인 스타일보다 우선함,동적인 클래스 추가할 때 추천.*/
+        }
+        .box2{
+            background: orange;
+            border: 1px solid blue;
+            width:300px;
+            height: 100px;
+            display:inline-block;
+            padding: 50px 50px;
+        }
+        .box3{
+            display:inline;
+        }
+        .test{
+            border: 2px solid black;
+            margin: 50px 0;
+            background: yellow;
+            display:flex;
+            flex-direction: column;
+        }
+        .test div{
+            background: lime;
+            margin: 20px 0;
+            
+        }
+        /*우선순위*/
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box1 note" id="box">박스1</div>
+        <div class="box2">박스2</div>
+        <div class="box3">박스3</div>
+        <div class="box4">박스4</div>
+    </div>
+    <div class="test">
+        <div class="test1">box1</div>
+        <div class="test2">box2</div>
+        <div class="test3">box3</div>
+        <div class="test4">box4</div>
+    </div>
+</body>
+</html>
