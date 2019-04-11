@@ -745,11 +745,206 @@ a:hover, a:focus{
 .board-act .board-list, .board-act .board-more{
     display:block;
 }
-
-.board-more::before{
-    /* background: red; */
-    color:hsla(110, 50%, 30%, 1)
+/*새소식*/
+/* .news{
+    margin-top:25px;
+    position: relative;
 }
+.news-item-brief, .news-item-date, .news-item-subject{
+    
+    float:right;
+    width:240px;
+}
+.news-item-subject{
+    font-weight: 700;
+}
+.news-head{
+    border-bottom:1px solid #000;
+    display:block;
+    padding-bottom: 18px;
+    color:#EC5C2F;
+    font-weight: 700;
+}
+.news-item-subject{
+    background: cyan;
+
+}
+.news-item{
+    margin-top:22px;
+}
+.news-item a{
+    display:block;
+}
+.news-item-thumbnail img{
+    box-shadow: 0px 10px 10px 3px rgba(0,0,0,0.3);
+}
+.news-item-thumbnail figcaption{
+    padding:20px;
+}
+.news-item-date{
+    padding-bottom:15px;
+}
+.news-item-brief{
+    width:240px;
+}
+.news-more{
+    position: absolute;
+    top:0;
+    right:0;
+} */
+.news{
+    margin-top:20px;
+    position: relative;
+}
+.news::before{
+    content:"";
+    position: absolute;
+    top:35px;
+    left:0;
+    width:80%;
+    height:1px;
+    background: #aaa linear-gradient(to right, #aaa , #fff);
+}
+.news-head{
+    color:#EC5C2F;
+    font-size:1.5rem;
+    font-weight:700;
+}
+.news-item{
+    margin-top:10vh;
+    position: relative;
+}
+.news-item-subject{
+    font-size:1.5rem;
+}
+
+.news-item-brief{
+    margin-top:10px;
+    line-height:1.5;
+}
+.news-more{
+    position: absolute;
+    padding:8px;
+    top:-8px;
+    right:-8px;
+}
+.news-more::before{
+    color:hsla(110, 30%, 50%, 1)
+}
+.news-item a{
+    display:block;
+    padding-left:130px;
+}
+.news-item-thumbnail{
+    position: absolute;
+    top:3px;
+    left:0;
+    text-align:center;
+}
+.news-item-thumbnail img{
+    margin-bottom:15px;
+    box-shadow: 0 10px 15px 5px #aaa;
+}
+/*신규 이벤트 및 관련사이트 영역*/
+/* .event-related{
+    background: #ccc linear-gradient(#ccc, #eee);
+    border:1px solid #aaa;
+    border-radius:5px;
+    padding:10px;
+}
+.event{
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom:1px solid #aaa;
+}
+.event-heading{
+    font-weight:700;
+}
+.event-heading span{
+    color:#fc7f37;
+}
+.event-thumbnail{
+    margin:10px 0 ;
+}
+.btn-event-prev, .btn-event-next{
+    width:19px;
+    height: 18px;
+    padding-top:18px;
+    overflow:hidden;
+    background-image:url("images/back_forward.png");
+    border:none;
+    position: absolute;
+    top:0;
+    cursor:pointer;
+}
+.btn-event-prev{
+    background-position: 0 0;
+    right:20px;
+}
+.btn-event-next{
+    background-position: -36px 0;
+    right:0;
+}
+.related{
+    padding-top:10px;
+}
+.related-heading{
+    font-weight:700;
+}
+.related-heading span{
+    color:#fc7f37;
+}
+.related-list{
+    background: #fff;
+    margin-top:10px;
+    border-radius:5px;
+    border:1px solid #aaa;
+    padding:10px;
+    height: 26px;
+}
+.list-act{
+    height:auto;
+} */
+
+
+ .event{
+    position: relative;
+}
+.event-heading{
+    font-size:1.5rem;
+    font-weight:700;
+}
+.event-heading span{
+    color: #EC5C2F;
+}
+.event p{
+    margin:10px 0;
+}
+.event-thumbnail{
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px #999;
+}
+.btn-event{
+    background: yellow;
+    height: 18px;
+    padding:2px;
+    top:0;
+    right:0;
+    overflow:hidden;
+    position: absolute;
+}
+.btn-event-prev, .btn-event-next{
+    width: 19px;
+    height: 18px;
+
+    padding-top:18px;
+    background: pink url(images/back_forward.png);
+    border:0;
+}
+.btn-event-next{
+    background-position: 100% 0;
+    /* 상자의 위치와 배경의 위치가 완전히 같도록 함 */
+} 
 /*슬로건*/
 .slogan{
     
